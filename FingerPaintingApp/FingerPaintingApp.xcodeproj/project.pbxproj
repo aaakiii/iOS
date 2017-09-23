@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		611988271F75C164005DF8BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611988261F75C164005DF8BA /* AppDelegate.swift */; };
+		611988291F75C164005DF8BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611988281F75C164005DF8BA /* ViewController.swift */; };
+		6119882C1F75C164005DF8BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6119882A1F75C164005DF8BA /* Main.storyboard */; };
+		6119882E1F75C164005DF8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6119882D1F75C164005DF8BA /* Assets.xcassets */; };
+		611988311F75C164005DF8BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6119882F1F75C164005DF8BA /* LaunchScreen.storyboard */; };
+		611988391F75DA0F005DF8BA /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611988381F75DA0F005DF8BA /* CanvasView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		611988231F75C164005DF8BA /* FingerPaintingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerPaintingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		611988261F75C164005DF8BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		611988281F75C164005DF8BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6119882B1F75C164005DF8BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6119882D1F75C164005DF8BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		611988301F75C164005DF8BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		611988321F75C164005DF8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		611988381F75DA0F005DF8BA /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		611988201F75C163005DF8BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6119881A1F75C163005DF8BA = {
+			isa = PBXGroup;
+			children = (
+				611988251F75C164005DF8BA /* FingerPaintingApp */,
+				611988241F75C164005DF8BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		611988241F75C164005DF8BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				611988231F75C164005DF8BA /* FingerPaintingApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		611988251F75C164005DF8BA /* FingerPaintingApp */ = {
+			isa = PBXGroup;
+			children = (
+				611988261F75C164005DF8BA /* AppDelegate.swift */,
+				611988281F75C164005DF8BA /* ViewController.swift */,
+				6119882A1F75C164005DF8BA /* Main.storyboard */,
+				6119882D1F75C164005DF8BA /* Assets.xcassets */,
+				6119882F1F75C164005DF8BA /* LaunchScreen.storyboard */,
+				611988321F75C164005DF8BA /* Info.plist */,
+				611988381F75DA0F005DF8BA /* CanvasView.swift */,
+			);
+			path = FingerPaintingApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		611988221F75C163005DF8BA /* FingerPaintingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 611988351F75C164005DF8BA /* Build configuration list for PBXNativeTarget "FingerPaintingApp" */;
+			buildPhases = (
+				6119881F1F75C163005DF8BA /* Sources */,
+				611988201F75C163005DF8BA /* Frameworks */,
+				611988211F75C163005DF8BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FingerPaintingApp;
+			productName = FingerPaintingApp;
+			productReference = 611988231F75C164005DF8BA /* FingerPaintingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6119881B1F75C163005DF8BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "岡田暁";
+				TargetAttributes = {
+					611988221F75C163005DF8BA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6119881E1F75C163005DF8BA /* Build configuration list for PBXProject "FingerPaintingApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6119881A1F75C163005DF8BA;
+			productRefGroup = 611988241F75C164005DF8BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				611988221F75C163005DF8BA /* FingerPaintingApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		611988211F75C163005DF8BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				611988311F75C164005DF8BA /* LaunchScreen.storyboard in Resources */,
+				6119882E1F75C164005DF8BA /* Assets.xcassets in Resources */,
+				6119882C1F75C164005DF8BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6119881F1F75C163005DF8BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				611988291F75C164005DF8BA /* ViewController.swift in Sources */,
+				611988271F75C164005DF8BA /* AppDelegate.swift in Sources */,
+				611988391F75DA0F005DF8BA /* CanvasView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6119882A1F75C164005DF8BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6119882B1F75C164005DF8BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6119882F1F75C164005DF8BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				611988301F75C164005DF8BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		611988331F75C164005DF8BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		611988341F75C164005DF8BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		611988361F75C164005DF8BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FingerPaintingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aki.FingerPaintingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		611988371F75C164005DF8BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FingerPaintingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aki.FingerPaintingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6119881E1F75C163005DF8BA /* Build configuration list for PBXProject "FingerPaintingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				611988331F75C164005DF8BA /* Debug */,
+				611988341F75C164005DF8BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		611988351F75C164005DF8BA /* Build configuration list for PBXNativeTarget "FingerPaintingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				611988361F75C164005DF8BA /* Debug */,
+				611988371F75C164005DF8BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6119881B1F75C163005DF8BA /* Project object */;
+}
