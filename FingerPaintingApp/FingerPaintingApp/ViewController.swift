@@ -45,6 +45,7 @@ class ViewController: UIViewController {
         eraseBtn.addTarget(self, action: #selector(self.onClick(_:)), for:.touchUpInside)
         eraseBtn.tag = 4
         self.view.addSubview(eraseBtn)
+        print("yes")
     
         
         
