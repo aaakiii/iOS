@@ -90,7 +90,6 @@ struct ScaryBugSet {
     static func AiiiiieeeeeSet() -> ScaryBugs{
         var bugs = [ScaryBug]()
         bugs.append(ScaryBug(withName: "Wolf Spider", imageName: "wolfSpider.jpg", howScary: .Aiiiiieeeee))
-        bugs.append(ScaryBug(withName: "Wolf Spider", imageName: "wolfSpider.jpg", howScary: .Aiiiiieeeee))
         bugs.append(ScaryBug(withName: "Grasshopper", imageName: "grasshopper.jpg", howScary: .Aiiiiieeeee))
         bugs.append(ScaryBug(withName: "Scorpion", imageName: "scorpion.jpg", howScary: .Aiiiiieeeee))
         return ScaryBugs(name: "Aiiieeee", bugs:bugs)
@@ -100,7 +99,7 @@ struct ScaryBugSet {
         var bugs = [ScaryBug]()
         bugs.append(ScaryBug(withName: "Potato Bug", imageName: "potatoBug.jpg", howScary: .QuiteScary))
         bugs.append(ScaryBug(withName: "Bee", imageName: "bee.jpg", howScary: .QuiteScary))
-         bugs.append(ScaryBug(withName: "Cockroach", imageName: "cockroach.jpg", howScary: .QuiteScary))
+        bugs.append(ScaryBug(withName: "Cockroach", imageName: "cockroach.jpg", howScary: .QuiteScary))
         bugs.append(ScaryBug(withName: "Exoskeleton", imageName: "exoskeleton.jpg", howScary: .QuiteScary))
         bugs.append(ScaryBug(withName: "Mosquito", imageName: "mosquito.jpg", howScary: .QuiteScary))
         bugs.append(ScaryBug(withName: "Roach", imageName: "roach.jpg", howScary: .QuiteScary))
