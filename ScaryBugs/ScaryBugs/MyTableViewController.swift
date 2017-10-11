@@ -68,15 +68,24 @@ class MyTableViewController:UITableViewController {
         let imageView = cell.viewWithTag(1) as! UIImageView
         let label1 = cell.viewWithTag(2) as! UILabel
         let label2 = cell.viewWithTag(3) as! UILabel
+        let imageView2 = cell.viewWithTag(4) as! UIImageView
         
         if indexPath.row == set.bugs.count && isEditing {
             label1.text = "ADD Item"
             label2.text = nil
             imageView.image = nil
+            imageView2.image = nil
         }else{
             imageView.image = set.bugs[indexPath.row].image
             label1.text = "\(set.bugs[indexPath.row].name)"
             label2.text = "\(set.bugs[indexPath.row].howScary)"
+            if set.bugs[indexPath.row].howScary == .QuiteScary || set.bugs[indexPath.row].howScary == .Aiiiiieeeee {
+                imageView2.image = UIImage(named:"shockedface2_full")!
+            }else {
+                imageView2.image = UIImage(named:"shockedface2_empty")!
+                
+            }
+            
         }
         return cell
     }
@@ -141,5 +150,16 @@ class MyTableViewController:UITableViewController {
             return proposedDestinationIndexPath
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
+        if segue.identifier == "GoToEdit" {
+            let editViewController = segue.destination as? EditViewController
+            //画像と名前をpass
+        }
+    }
+   
 }
+
+//
+
 

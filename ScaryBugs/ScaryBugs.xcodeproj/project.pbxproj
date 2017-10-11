@@ -13,6 +13,8 @@
 		61369B641F7978570029C7C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61369B631F7978570029C7C0 /* Assets.xcassets */; };
 		61369B671F7978570029C7C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61369B651F7978570029C7C0 /* LaunchScreen.storyboard */; };
 		61369B6F1F797A970029C7C0 /* ScaryBugs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61369B6E1F797A970029C7C0 /* ScaryBugs.swift */; };
+		614EA1AE1F7D65DF0091F762 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614EA1AD1F7D65DF0091F762 /* EditViewController.swift */; };
+		614EA1B01F7D6AE80091F762 /* RatingTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614EA1AF1F7D6AE80091F762 /* RatingTableTableViewController.swift */; };
 		61D5C6D91F7B263B001394D5 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D5C6D81F7B263B001394D5 /* MyTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		61369B661F7978570029C7C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61369B681F7978570029C7C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61369B6E1F797A970029C7C0 /* ScaryBugs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaryBugs.swift; sourceTree = "<group>"; };
+		614EA1AD1F7D65DF0091F762 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		614EA1AF1F7D6AE80091F762 /* RatingTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingTableTableViewController.swift; sourceTree = "<group>"; };
 		61D5C6D81F7B263B001394D5 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +70,8 @@
 				61369B681F7978570029C7C0 /* Info.plist */,
 				61369B6E1F797A970029C7C0 /* ScaryBugs.swift */,
 				61D5C6D81F7B263B001394D5 /* MyTableViewController.swift */,
+				614EA1AF1F7D6AE80091F762 /* RatingTableTableViewController.swift */,
+				614EA1AD1F7D65DF0091F762 /* EditViewController.swift */,
 			);
 			path = ScaryBugs;
 			sourceTree = "<group>";
@@ -142,8 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				614EA1AE1F7D65DF0091F762 /* EditViewController.swift in Sources */,
 				61369B5F1F7978570029C7C0 /* ViewController.swift in Sources */,
 				61D5C6D91F7B263B001394D5 /* MyTableViewController.swift in Sources */,
+				614EA1B01F7D6AE80091F762 /* RatingTableTableViewController.swift in Sources */,
 				61369B5D1F7978570029C7C0 /* AppDelegate.swift in Sources */,
 				61369B6F1F797A970029C7C0 /* ScaryBugs.swift in Sources */,
 			);
