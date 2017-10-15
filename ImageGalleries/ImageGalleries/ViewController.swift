@@ -9,101 +9,98 @@
 import UIKit
 
 class ViewController: UIViewController, UIScrollViewDelegate {
+    @IBOutlet weak var pageControl: UIPageControl!
     
     @IBOutlet weak var scrollView: UIScrollView!
     
-    let firstImageView = UIImageView()
-    let secondImageView = UIImageView()
-    let thirdImageView = UIImageView()
+    let imageNames = [
+        "Photo1",
+        "Photo2",
+        "Photo3",
+        ]
     
-    var img1 = UIImage()
-    var img2 = UIImage()
-    var img3 = UIImage()
-    
+    var contentWidth = CGFloat(0.0)
+    var currentImage: UIImage?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-     
-        img1 = self.resizeImage(image: UIImage(named: "Photo1")!, targetSize: CGSize(width: 400.0, height: 400.0))
-        firstImageView.image = img1
-        firstImageView.translatesAutoresizingMaskIntoConstraints  = false
-        
-        img2 = self.resizeImage(image: UIImage(named: "Photo2")!, targetSize: CGSize(width: 400.0, height: 400.0))
-        secondImageView.image = img2
-        secondImageView.translatesAutoresizingMaskIntoConstraints = false
-        
-        img3 = self.resizeImage(image: UIImage(named: "Photo3")!, targetSize: CGSize(width: 400.0, height: 400.0))
-        thirdImageView.image =  img3
-        thirdImageView.translatesAutoresizingMaskIntoConstraints = false
 
-        scrollView.addSubview(firstImageView)
-        scrollView.addSubview(secondImageView)
-        scrollView.addSubview(thirdImageView)
+        pageControl.numberOfPages = imageNames.count
+        pageControl.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(pageControl_tap)))
         
-        let firstViewTopConstraint = NSLayoutConstraint(item: firstImageView,
-                                                        attribute: NSLayoutAttribute.top,
-                                                        relatedBy: NSLayoutRelation.equal,
-                                                        toItem: scrollView,
-                                                        attribute: NSLayoutAttribute.top,
-                                                        multiplier: 1.0,
-                                                        constant: 700)
-        scrollView.addConstraint(firstViewTopConstraint)
+        scrollView.delegate = self
         
-        let secondViewTopConstraint = NSLayoutConstraint(item: secondImageView,
-                                                       attribute: NSLayoutAttribute.top,
-                                                       relatedBy: NSLayoutRelation.equal,
-                                                       toItem: scrollView,
-                                                       attribute: NSLayoutAttribute.top,
-                                                       multiplier: 1.0,
-                                                       constant: 100)
-        scrollView.addConstraint(secondViewTopConstraint)
-        
-        let thirdViewTopConstraint = NSLayoutConstraint(item: thirdImageView,
-                                                       attribute: NSLayoutAttribute.top,
-                                                       relatedBy: NSLayoutRelation.equal,
-                                                       toItem: scrollView,
-                                                       attribute: NSLayoutAttribute.top,
-                                                       multiplier: 1.0,
-                                                       constant: 400)
-        scrollView.addConstraint(thirdViewTopConstraint)
-        scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: 1200)
-        
-        
-        
-        
-        
+        let container = prepareContainer(numOfItems: imageNames.count)
+        for (index, name) in imageNames.enumerated() {
+            let v = prepareImage(at: index, name: name, to: container)            
+            let g = UITapGestureRecognizer(target: self, action: #selector(ontap))
+            v.addGestureRecognizer(g)
+        }
+
     }
-
+    func prepareContainer(numOfItems: Int) -> UIView {
+        let v = UIView()
+        v.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.addSubview(v)
+        
+        v.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 0).isActive = true
+        v.heightAnchor.constraint(equalTo: scrollView.heightAnchor).isActive = true
+        v.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: 0).isActive = true
+        
+        let width = view.bounds.width * CGFloat(numOfItems)
+        v.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
+        v.widthAnchor.constraint(equalToConstant: width).isActive = true
+        v.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
+        
+        return v
+    }
+    
+    func prepareImage(at index: Int, name: String, to: UIView) -> UIImageView {
+        let v = UIImageView()
+        v.image = UIImage(named: name)
+        v.isUserInteractionEnabled = true
+        
+        let width = view.bounds.width
+        v.frame.origin.x = width * CGFloat(index)
+        v.frame.size.width = width
+        
+        v.frame.origin.y = 0
+        v.frame.size.height = view.bounds.height
+        
+        to.addSubview(v)
+        
+        return v
+    }
+    
+    @objc func ontap(sender: UITapGestureRecognizer) {
+        if let v = sender.view as? UIImageView {
+            currentImage = v.image
+            performSegue(withIdentifier: "detail", sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let view = segue.destination as! DetailViewController
+        view.image = currentImage
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    func resizeImage(image: UIImage,targetSize: CGSize) -> UIImage{
-        let size = image.size
-        let widthRatio = targetSize.width/image.size.width
-        let heightRatio = targetSize.height/image.size.height
-        
-        var newSize:CGSize
-        if(widthRatio > heightRatio){
-            newSize = CGSize(width: size.width * heightRatio, height: size.height * heightRatio)
-            
-        }else {
-            newSize = CGSize(width: size.width * widthRatio,  height: size.height * widthRatio)
-        }
-        
-        let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
-        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
-        image.draw(in: rect)
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        return newImage!
-        
-        
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let index = Int(scrollView.contentOffset.x / view.bounds.width + 0.5)
+        pageControl.currentPage = index
     }
-
-
+    
+    @objc func pageControl_tap(sender: UITapGestureRecognizer) {
+        let index = (pageControl.currentPage + 1) % pageControl.numberOfPages
+        
+        let width = view.bounds.width
+        let x = width * CGFloat(index)
+        scrollView.scrollRectToVisible(CGRect(x: x, y: 0, width: x+1, height: 1), animated: true)
+    }
 
 }
 
