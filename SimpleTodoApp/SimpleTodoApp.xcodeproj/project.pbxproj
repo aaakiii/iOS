@@ -7,103 +7,133 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		617AC4FE1F9573FE0051C8AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617AC4FD1F9573FE0051C8AE /* AppDelegate.swift */; };
-		617AC5001F9573FE0051C8AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617AC4FF1F9573FE0051C8AE /* ViewController.swift */; };
-		617AC5031F9573FE0051C8AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617AC5011F9573FE0051C8AE /* Main.storyboard */; };
-		617AC5051F9573FE0051C8AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 617AC5041F9573FE0051C8AE /* Assets.xcassets */; };
-		617AC5081F9573FE0051C8AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617AC5061F9573FE0051C8AE /* LaunchScreen.storyboard */; };
-		617AC5101F957D900051C8AE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617AC50F1F957D900051C8AE /* DetailViewController.swift */; };
+		617315491F95DC6D00E8A490 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617315481F95DC6D00E8A490 /* AppDelegate.swift */; };
+		6173154E1F95DC6D00E8A490 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6173154C1F95DC6D00E8A490 /* Main.storyboard */; };
+		617315501F95DC6D00E8A490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6173154F1F95DC6D00E8A490 /* Assets.xcassets */; };
+		617315531F95DC6D00E8A490 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617315511F95DC6D00E8A490 /* LaunchScreen.storyboard */; };
+		61F74C6B1F95DFC800DC5742 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F74C6A1F95DFC800DC5742 /* ToDoListViewController.swift */; };
+		61F74C6D1F95E16E00DC5742 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F74C6C1F95E16E00DC5742 /* CreateViewController.swift */; };
+		61F74C6F1F95E3CA00DC5742 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F74C6E1F95E3CA00DC5742 /* ToDo.swift */; };
+		8B4650887D32E061BE798762 /* Pods_SimpleToDoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14C3B54C12FB945F2B9688B /* Pods_SimpleToDoApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		617AC4FA1F9573FE0051C8AE /* SimpleTodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		617AC4FD1F9573FE0051C8AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		617AC4FF1F9573FE0051C8AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		617AC5021F9573FE0051C8AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		617AC5041F9573FE0051C8AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		617AC5071F9573FE0051C8AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		617AC5091F9573FE0051C8AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		617AC50F1F957D900051C8AE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		617315451F95DC6D00E8A490 /* SimpleToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		617315481F95DC6D00E8A490 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6173154D1F95DC6D00E8A490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6173154F1F95DC6D00E8A490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		617315521F95DC6D00E8A490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		617315541F95DC6D00E8A490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61F74C6A1F95DFC800DC5742 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
+		61F74C6C1F95E16E00DC5742 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		61F74C6E1F95E3CA00DC5742 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		8E40AA1EBF497E67F0632F30 /* Pods-SimpleToDoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleToDoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleToDoApp/Pods-SimpleToDoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C14C3B54C12FB945F2B9688B /* Pods_SimpleToDoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleToDoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8A0917C088838A8769CD65 /* Pods-SimpleToDoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleToDoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleToDoApp/Pods-SimpleToDoApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		617AC4F71F9573FE0051C8AE /* Frameworks */ = {
+		617315421F95DC6D00E8A490 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B4650887D32E061BE798762 /* Pods_SimpleToDoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		617AC4F11F9573FE0051C8AE = {
+		555C63850E169881404C3C1C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				617AC4FC1F9573FE0051C8AE /* SimpleTodoApp */,
-				617AC4FB1F9573FE0051C8AE /* Products */,
+				8E40AA1EBF497E67F0632F30 /* Pods-SimpleToDoApp.debug.xcconfig */,
+				DC8A0917C088838A8769CD65 /* Pods-SimpleToDoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6173153C1F95DC6D00E8A490 = {
+			isa = PBXGroup;
+			children = (
+				617315471F95DC6D00E8A490 /* SimpleToDoApp */,
+				617315461F95DC6D00E8A490 /* Products */,
+				555C63850E169881404C3C1C /* Pods */,
+				92BD3D89CAFD2701331E269D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		617AC4FB1F9573FE0051C8AE /* Products */ = {
+		617315461F95DC6D00E8A490 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				617AC4FA1F9573FE0051C8AE /* SimpleTodoApp.app */,
+				617315451F95DC6D00E8A490 /* SimpleToDoApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		617AC4FC1F9573FE0051C8AE /* SimpleTodoApp */ = {
+		617315471F95DC6D00E8A490 /* SimpleToDoApp */ = {
 			isa = PBXGroup;
 			children = (
-				617AC4FD1F9573FE0051C8AE /* AppDelegate.swift */,
-				617AC4FF1F9573FE0051C8AE /* ViewController.swift */,
-				617AC50F1F957D900051C8AE /* DetailViewController.swift */,
-				617AC5011F9573FE0051C8AE /* Main.storyboard */,
-				617AC5041F9573FE0051C8AE /* Assets.xcassets */,
-				617AC5061F9573FE0051C8AE /* LaunchScreen.storyboard */,
-				617AC5091F9573FE0051C8AE /* Info.plist */,
+				617315481F95DC6D00E8A490 /* AppDelegate.swift */,
+				6173154C1F95DC6D00E8A490 /* Main.storyboard */,
+				6173154F1F95DC6D00E8A490 /* Assets.xcassets */,
+				617315511F95DC6D00E8A490 /* LaunchScreen.storyboard */,
+				617315541F95DC6D00E8A490 /* Info.plist */,
+				61F74C6A1F95DFC800DC5742 /* ToDoListViewController.swift */,
+				61F74C6C1F95E16E00DC5742 /* CreateViewController.swift */,
+				61F74C6E1F95E3CA00DC5742 /* ToDo.swift */,
 			);
-			path = SimpleTodoApp;
+			path = SimpleToDoApp;
+			sourceTree = "<group>";
+		};
+		92BD3D89CAFD2701331E269D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C14C3B54C12FB945F2B9688B /* Pods_SimpleToDoApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		617AC4F91F9573FE0051C8AE /* SimpleTodoApp */ = {
+		617315441F95DC6D00E8A490 /* SimpleToDoApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 617AC50C1F9573FE0051C8AE /* Build configuration list for PBXNativeTarget "SimpleTodoApp" */;
+			buildConfigurationList = 617315571F95DC6D00E8A490 /* Build configuration list for PBXNativeTarget "SimpleToDoApp" */;
 			buildPhases = (
-				617AC4F61F9573FE0051C8AE /* Sources */,
-				617AC4F71F9573FE0051C8AE /* Frameworks */,
-				617AC4F81F9573FE0051C8AE /* Resources */,
+				19C06DB008205AEA97746ABA /* [CP] Check Pods Manifest.lock */,
+				617315411F95DC6D00E8A490 /* Sources */,
+				617315421F95DC6D00E8A490 /* Frameworks */,
+				617315431F95DC6D00E8A490 /* Resources */,
+				08E837BF8C0E2A6F10F68046 /* [CP] Embed Pods Frameworks */,
+				68A0B2F5F37AD4F95116DBC8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SimpleTodoApp;
-			productName = SimpleTodoApp;
-			productReference = 617AC4FA1F9573FE0051C8AE /* SimpleTodoApp.app */;
+			name = SimpleToDoApp;
+			productName = SimpleToDoApp;
+			productReference = 617315451F95DC6D00E8A490 /* SimpleToDoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		617AC4F21F9573FE0051C8AE /* Project object */ = {
+		6173153D1F95DC6D00E8A490 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Aki;
 				TargetAttributes = {
-					617AC4F91F9573FE0051C8AE = {
+					617315441F95DC6D00E8A490 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 617AC4F51F9573FE0051C8AE /* Build configuration list for PBXProject "SimpleTodoApp" */;
+			buildConfigurationList = 617315401F95DC6D00E8A490 /* Build configuration list for PBXProject "SimpleToDoApp" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,55 +141,112 @@
 				en,
 				Base,
 			);
-			mainGroup = 617AC4F11F9573FE0051C8AE;
-			productRefGroup = 617AC4FB1F9573FE0051C8AE /* Products */;
+			mainGroup = 6173153C1F95DC6D00E8A490;
+			productRefGroup = 617315461F95DC6D00E8A490 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				617AC4F91F9573FE0051C8AE /* SimpleTodoApp */,
+				617315441F95DC6D00E8A490 /* SimpleToDoApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		617AC4F81F9573FE0051C8AE /* Resources */ = {
+		617315431F95DC6D00E8A490 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				617AC5081F9573FE0051C8AE /* LaunchScreen.storyboard in Resources */,
-				617AC5051F9573FE0051C8AE /* Assets.xcassets in Resources */,
-				617AC5031F9573FE0051C8AE /* Main.storyboard in Resources */,
+				617315531F95DC6D00E8A490 /* LaunchScreen.storyboard in Resources */,
+				617315501F95DC6D00E8A490 /* Assets.xcassets in Resources */,
+				6173154E1F95DC6D00E8A490 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08E837BF8C0E2A6F10F68046 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SimpleToDoApp/Pods-SimpleToDoApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleToDoApp/Pods-SimpleToDoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19C06DB008205AEA97746ABA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleToDoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68A0B2F5F37AD4F95116DBC8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleToDoApp/Pods-SimpleToDoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		617AC4F61F9573FE0051C8AE /* Sources */ = {
+		617315411F95DC6D00E8A490 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				617AC5101F957D900051C8AE /* DetailViewController.swift in Sources */,
-				617AC5001F9573FE0051C8AE /* ViewController.swift in Sources */,
-				617AC4FE1F9573FE0051C8AE /* AppDelegate.swift in Sources */,
+				61F74C6B1F95DFC800DC5742 /* ToDoListViewController.swift in Sources */,
+				617315491F95DC6D00E8A490 /* AppDelegate.swift in Sources */,
+				61F74C6D1F95E16E00DC5742 /* CreateViewController.swift in Sources */,
+				61F74C6F1F95E3CA00DC5742 /* ToDo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		617AC5011F9573FE0051C8AE /* Main.storyboard */ = {
+		6173154C1F95DC6D00E8A490 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				617AC5021F9573FE0051C8AE /* Base */,
+				6173154D1F95DC6D00E8A490 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		617AC5061F9573FE0051C8AE /* LaunchScreen.storyboard */ = {
+		617315511F95DC6D00E8A490 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				617AC5071F9573FE0051C8AE /* Base */,
+				617315521F95DC6D00E8A490 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -167,7 +254,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		617AC50A1F9573FE0051C8AE /* Debug */ = {
+		617315551F95DC6D00E8A490 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -224,7 +311,7 @@
 			};
 			name = Debug;
 		};
-		617AC50B1F9573FE0051C8AE /* Release */ = {
+		617315561F95DC6D00E8A490 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -274,28 +361,30 @@
 			};
 			name = Release;
 		};
-		617AC50D1F9573FE0051C8AE /* Debug */ = {
+		617315581F95DC6D00E8A490 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E40AA1EBF497E67F0632F30 /* Pods-SimpleToDoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SimpleTodoApp/Info.plist;
+				INFOPLIST_FILE = SimpleToDoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = aki.SimpleTodoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = aki.SimpleToDoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		617AC50E1F9573FE0051C8AE /* Release */ = {
+		617315591F95DC6D00E8A490 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC8A0917C088838A8769CD65 /* Pods-SimpleToDoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SimpleTodoApp/Info.plist;
+				INFOPLIST_FILE = SimpleToDoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = aki.SimpleTodoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = aki.SimpleToDoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,25 +394,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		617AC4F51F9573FE0051C8AE /* Build configuration list for PBXProject "SimpleTodoApp" */ = {
+		617315401F95DC6D00E8A490 /* Build configuration list for PBXProject "SimpleToDoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				617AC50A1F9573FE0051C8AE /* Debug */,
-				617AC50B1F9573FE0051C8AE /* Release */,
+				617315551F95DC6D00E8A490 /* Debug */,
+				617315561F95DC6D00E8A490 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		617AC50C1F9573FE0051C8AE /* Build configuration list for PBXNativeTarget "SimpleTodoApp" */ = {
+		617315571F95DC6D00E8A490 /* Build configuration list for PBXNativeTarget "SimpleToDoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				617AC50D1F9573FE0051C8AE /* Debug */,
-				617AC50E1F9573FE0051C8AE /* Release */,
+				617315581F95DC6D00E8A490 /* Debug */,
+				617315591F95DC6D00E8A490 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 617AC4F21F9573FE0051C8AE /* Project object */;
+	rootObject = 6173153D1F95DC6D00E8A490 /* Project object */;
 }
