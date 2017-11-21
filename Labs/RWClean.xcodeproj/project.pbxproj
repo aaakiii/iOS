@@ -144,8 +144,8 @@
 		422FEA5B1E675E8800AFDC41 /* RWClean */ = {
 			isa = PBXGroup;
 			children = (
+				61B26D481FC371A8009917A6 /* MultiCastClosureDelegate */,
 				616DF8581FC3494D002523D2 /* SynchronizedValue.swift */,
-				61B26D461FC35D9D009917A6 /* MulticastClosureDelegate.swift */,
 				422FEA731E67608200AFDC41 /* App */,
 				42ECC7D51EB7BC690090EED2 /* Cleaning Services */,
 				42ECC7D61EB7BC700090EED2 /* Home Info */,
@@ -400,6 +400,14 @@
 				4E246B841FBF51BE00402427 /* ProductViewModel.swift */,
 			);
 			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		61B26D481FC371A8009917A6 /* MultiCastClosureDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				61B26D461FC35D9D009917A6 /* MulticastClosureDelegate.swift */,
+			);
+			name = MultiCastClosureDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
