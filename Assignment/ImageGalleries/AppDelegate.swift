@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ImageGalleries
 //
-//  Created by 岡田暁 on 2017-11-20.
+//  Created by 岡田暁 on 2017-10-13.
 //  Copyright © 2017 Aki. All rights reserved.
 //
 
