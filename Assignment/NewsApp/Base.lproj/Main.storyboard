@@ -27,20 +27,23 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="RVP-m5-fXx">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nov 22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzl-eW-2zX">
                                     <rect key="frame" x="29" y="8" width="62" height="21"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="RVP-m5-fXx">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
+                                <constraint firstItem="RVP-m5-fXx" firstAttribute="top" secondItem="QX6-KG-hLV" secondAttribute="top" id="0ab-aL-OGS"/>
                                 <constraint firstItem="Hzl-eW-2zX" firstAttribute="leading" secondItem="QX6-KG-hLV" secondAttribute="leading" constant="29" id="5dH-G2-RE5"/>
+                                <constraint firstAttribute="bottom" secondItem="RVP-m5-fXx" secondAttribute="bottom" id="NeR-T1-bhg"/>
+                                <constraint firstItem="RVP-m5-fXx" firstAttribute="leading" secondItem="QX6-KG-hLV" secondAttribute="leading" id="nQp-m3-kGD"/>
+                                <constraint firstAttribute="trailing" secondItem="RVP-m5-fXx" secondAttribute="trailing" id="phJ-9G-2SA"/>
                                 <constraint firstItem="Hzl-eW-2zX" firstAttribute="top" secondItem="QX6-KG-hLV" secondAttribute="top" constant="20" id="rkv-lv-NUY"/>
                             </constraints>
                         </view>
@@ -59,17 +62,18 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8d-JK-hhc">
-                                            <rect key="frame" x="16" y="45" width="42" height="20"/>
+                                            <rect key="frame" x="16" y="45" width="333" height="20"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="b8d-JK-hhc" firstAttribute="leading" secondItem="juu-2I-AU9" secondAttribute="leadingMargin" id="7dU-sA-002"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="b8d-JK-hhc" secondAttribute="bottom" constant="7" id="94h-Kh-j1L"/>
-                                        <constraint firstItem="b8d-JK-hhc" firstAttribute="leading" secondItem="juu-2I-AU9" secondAttribute="leadingMargin" id="IJv-HC-lXF"/>
                                         <constraint firstItem="b8d-JK-hhc" firstAttribute="top" secondItem="YiN-n9-GXN" secondAttribute="bottom" constant="10" id="QAX-3j-p4O"/>
                                         <constraint firstItem="b8d-JK-hhc" firstAttribute="top" secondItem="YiN-n9-GXN" secondAttribute="bottom" constant="10" id="ao9-Wu-htz"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="b8d-JK-hhc" secondAttribute="trailing" constant="10" id="cAR-h8-Cjq"/>
                                         <constraint firstItem="YiN-n9-GXN" firstAttribute="top" secondItem="juu-2I-AU9" secondAttribute="topMargin" id="sk5-3A-7hX"/>
                                         <constraint firstItem="YiN-n9-GXN" firstAttribute="leading" secondItem="juu-2I-AU9" secondAttribute="leadingMargin" id="zBi-PV-D1N"/>
                                     </constraints>

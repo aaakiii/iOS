@@ -35,6 +35,7 @@ class TableViewController: UITableViewController {
     }
     
     func updateHeaderView() {
+        
         let effectiveHeight = kTableHeaderHeight - kTableHeaderCutAway / 2
         var headerRect = CGRect(x: 0, y: -effectiveHeight, width: tableView.bounds.width, height: kTableHeaderHeight)
         if tableView.contentOffset.y < -effectiveHeight {
@@ -51,10 +52,6 @@ class TableViewController: UITableViewController {
         headerMaskLayer?.path = path.cgPath
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
     // MARK: - Table view data source
     override var prefersStatusBarHidden: Bool {
