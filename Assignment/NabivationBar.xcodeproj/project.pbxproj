@@ -10,7 +10,6 @@
 		61E978471FC896C2009478AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E978461FC896C2009478AA /* AppDelegate.swift */; };
 		61E978491FC896C2009478AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E978481FC896C2009478AA /* ViewController.swift */; };
 		61E9784C1FC896C2009478AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E9784A1FC896C2009478AA /* Main.storyboard */; };
-		61E9784E1FC896C2009478AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61E9784D1FC896C2009478AA /* Assets.xcassets */; };
 		61E978511FC896C2009478AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E9784F1FC896C2009478AA /* LaunchScreen.storyboard */; };
 		61E9785B1FC8A02A009478AA /* Stretchy-NavBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61E978591FC8A02A009478AA /* Stretchy-NavBar.xcassets */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		61E978461FC896C2009478AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61E978481FC896C2009478AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		61E9784B1FC896C2009478AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		61E9784D1FC896C2009478AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61E978501FC896C2009478AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61E978521FC896C2009478AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61E978591FC8A02A009478AA /* Stretchy-NavBar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Stretchy-NavBar.xcassets"; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 				61E978461FC896C2009478AA /* AppDelegate.swift */,
 				61E978481FC896C2009478AA /* ViewController.swift */,
 				61E9784A1FC896C2009478AA /* Main.storyboard */,
-				61E9784D1FC896C2009478AA /* Assets.xcassets */,
 				61E9784F1FC896C2009478AA /* LaunchScreen.storyboard */,
 				61E978521FC896C2009478AA /* Info.plist */,
 				61E978591FC8A02A009478AA /* Stretchy-NavBar.xcassets */,
@@ -127,7 +124,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				61E978511FC896C2009478AA /* LaunchScreen.storyboard in Resources */,
-				61E9784E1FC896C2009478AA /* Assets.xcassets in Resources */,
 				61E9784C1FC896C2009478AA /* Main.storyboard in Resources */,
 				61E9785B1FC8A02A009478AA /* Stretchy-NavBar.xcassets in Resources */,
 			);

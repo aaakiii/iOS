@@ -51,6 +51,7 @@
                     </view>
                     <connections>
                         <outlet property="navHeight" destination="kU9-YZ-1sH" id="5Sn-e2-mql"/>
+                        <outlet property="navView" destination="bpP-1x-fF1" id="tZy-bR-Hik"/>
                         <outlet property="plusButton" destination="lov-sU-aiJ" id="IlM-lm-3y6"/>
                     </connections>
                 </viewController>
